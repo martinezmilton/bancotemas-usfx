@@ -14,10 +14,18 @@ return new class extends Migration
      */
     public function up(): void
     {
-        $role1 = Role::create(['name' => 'admin']);
-        $role2 = Role::create(['name' => 'tutor']);
-        $role3 = Role::create(['name' => 'asesor']);
-        $role4 = Role::create(['name' => 'estudiante']);
+        if (!Role::where('name', 'admin')->exists()) {
+            Role::create(['name' => 'admin']);
+        }
+        if (!Role::where('name', 'tutor')->exists()) {
+            Role::create(['name' => 'tutor']);
+        }
+        if (!Role::where('name', 'asesor')->exists()) {
+            Role::create(['name' => 'asesor']);
+        }
+        if (!Role::where('name', 'estudiante')->exists()) {
+            Role::create(['name' => 'estudiante']);
+        }
     }
 
     /**
