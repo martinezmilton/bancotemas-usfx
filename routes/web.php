@@ -9,7 +9,7 @@ use App\Http\Controllers\SearchController;
 use App\Http\Controllers\EstudianteController;
 
 Route::get('/', function () {
-    return view('/estudiantes');
+    return view('/estudiantes.index');
 });
 
 Route::get('/dashboard', function () {
