@@ -1,4 +1,4 @@
-@role('admin|asesor|tutor|estudiante')
+
 @extends('adminlte::page')
 
 @section('content')
@@ -86,4 +86,3 @@
         overflow: hidden;
     }
 </style>
-@endrole

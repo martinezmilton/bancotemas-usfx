@@ -1,4 +1,4 @@
-@role('admin|asesor')
+
 @extends('adminlte::page')
 
 @section('content')
@@ -17,7 +17,7 @@
     </div>
 </div>
 @endsection
-@endrole
+
 <style>
     .custom-form {
         border-radius: 10px;

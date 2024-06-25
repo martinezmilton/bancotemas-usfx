@@ -1,4 +1,4 @@
-@role('admin|asesor')
+
 @extends('adminlte::page')
 
 @section('content')
@@ -47,7 +47,7 @@
     </table>
 </div>
 @endsection
-@endrole
+
 
 <style>
     .custom-table {

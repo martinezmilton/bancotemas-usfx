@@ -1,4 +1,4 @@
-@role('admin|asesor|tutor')
+
 @extends('adminlte::page')
 
 @section('content')
@@ -83,7 +83,7 @@
     <a href="{{ route('temas.index') }}" class="btn btn-secondary">Volver</a>
 </div>
 @endsection
-@endrole
+
 <style>
     .custom-table {
         background-color: #017BFF;

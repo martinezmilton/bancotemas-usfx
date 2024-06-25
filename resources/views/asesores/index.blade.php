@@ -1,4 +1,4 @@
-@role('admin')
+
 @extends('adminlte::page')
 
 @section('content')
@@ -85,7 +85,7 @@
     </div>
 </div>
 @endsection
-@endrole
+
 
 
 

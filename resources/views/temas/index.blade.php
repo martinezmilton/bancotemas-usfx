@@ -1,4 +1,4 @@
-@role('admin|asesor|tutor')
+
 @extends('adminlte::page')
 
 @section('content')
@@ -61,17 +61,17 @@
                 <td>
                     <div class="text-left">
                         <a href="{{ route('temas.show', $tema->id) }}" class="btn btn-info btn-sm mb-1"><i class="fas fa-eye"></i></a>
-                        @role('admin|tutor')
+                        
                         <a href="{{ route('temas.edit', $tema->id) }}" class="btn btn-primary btn-sm mb-1"><i class="fas fa-edit"></i></a>
                         <form action="{{ route('temas.destroy', $tema->id) }}" method="POST" style="display:inline;">
                             @csrf
                             @method('DELETE')
                             <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('¿Estás seguro de eliminar este tema?')"><i class="fas fa-trash-alt"></i></button>
                         </form>
-                        @endrole
-                        @role('admin|asesor')
+                        
+                       
                         <a href="{{ route('temas.asignarshow', $tema->id) }}" class="btn badge badge-dark btn-sm mb-1">Asignar</a>
-                        @endrole
+                        
                     </div>
                 </td>
             </tr>
@@ -90,4 +90,3 @@
         overflow: hidden;
     }
 </style>
-@endrole
