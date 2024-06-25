@@ -1,4 +1,4 @@
-
+@role('admin|tutor')
 @extends('adminlte::page')
 
 @section('content')
@@ -80,7 +80,7 @@
     </div>
 </div>
 @endsection
-
+@endrole
 
 <style>
     .custom-form {

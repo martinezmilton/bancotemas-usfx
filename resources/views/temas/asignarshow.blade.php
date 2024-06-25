@@ -1,4 +1,4 @@
-
+@role('admin|asesor')
 @extends('adminlte::page')
 
 @section('content')
@@ -107,3 +107,4 @@
     });
 </script>
 @endsection
+@endrole

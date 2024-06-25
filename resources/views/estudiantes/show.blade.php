@@ -1,4 +1,4 @@
-
+@role('admin|asesor')
 @extends('adminlte::page')
 
 @section('content')
@@ -60,7 +60,7 @@
 </div>
 
 @endsection
-
+@endrole
 <style>
     .custom-table {
         background-color: #017BFF;
